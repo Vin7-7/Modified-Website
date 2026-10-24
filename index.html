@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101318">
+  <title>Atlas — Explore what matters</title>
+  <meta name="description" content="A fresh, modern redesign concept for discovering knowledge across Wikipedia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Atlas home"><span class="brand-mark">a</span><span>atlas<span class="brand-dot">.</span></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#discover">Discover</a><a href="#topics">Topics</a><a href="#daily">Daily brief</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle light/dark theme">☼</button>
+      <a class="contribute" href="https://en.wikipedia.org/wiki/Wikipedia:Contributing_to_Wikipedia" target="_blank" rel="noreferrer">Contribute <span>↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="discover">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YOUR CURIOSITY, UNLIMITED</div>
+        <h1>The world is<br>more <span class="gradient-text">interesting</span><br>than you think.</h1>
+        <p class="hero-sub">A universe of knowledge, one question away. Find a new perspective, follow a curiosity, or dive into something unexpected.</p>
+        <form class="search-box" id="searchForm">
+          <span class="search-symbol">⌕</span>
+          <input id="searchInput" type="search" placeholder="What do you want to understand?" aria-label="Search Wikipedia" autocomplete="off">
+          <button type="submit">Explore <span>→</span></button>
+        </form>
+        <div class="quick-search"><span>TRY:</span><button data-query="Black holes">Black holes</button><button data-query="Ancient civilizations">Ancient civilizations</button><button data-query="Artificial intelligence">AI</button></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract illustration of a glowing planet">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
+        <div class="planet"><div class="planet-shine"></div><div class="planet-land land-one"></div><div class="planet-land land-two"></div><div class="planet-land land-three"></div></div>
+        <div class="float-card card-top"><span class="mini-icon">✦</span><div><b>Curiosity unlocked</b><small>Keep following the question</small></div></div>
+        <div class="float-card card-bottom"><span class="stat-icon">↗</span><div><b>6.9M+ articles</b><small>Ideas from every corner</small></div></div>
+        <div class="star star-one">✦</div><div class="star star-two">✧</div><div class="star star-three">·</div>
+      </div>
+    </section>
+
+    <section class="section topics-section" id="topics">
+      <div class="section-heading"><div><div class="eyebrow muted">PICK A DIRECTION</div><h2>Where will curiosity take you?</h2></div><a class="text-link" href="https://en.wikipedia.org/wiki/Portal:Contents" target="_blank" rel="noreferrer">All topics <span>↗</span></a></div>
+      <div class="topic-grid">
+        <a class="topic-card science" href="https://en.wikipedia.org/wiki/Portal:Science" target="_blank" rel="noreferrer"><div class="topic-top"><span class="topic-icon">⚛</span><span class="topic-arrow">↗</span></div><h3>Science & nature</h3><p>From microscopic life to distant galaxies.</p><div class="topic-footer"><span>Explore the unknown</span><span class="line-arrow">⟶</span></div></a>
+        <a class="topic-card history" href="https://en.wikipedia.org/wiki/Portal:History" target="_blank" rel="noreferrer"><div class="topic-top"><span class="topic-icon">◷</span><span class="topic-arrow">↗</span></div><h3>History & culture</h3><p>Stories that shaped the world we live in.</p><div class="topic-footer"><span>Travel through time</span><span class="line-arrow">⟶</span></div></a>
+        <a class="topic-card technology" href="https://en.wikipedia.org/wiki/Portal:Technology" target="_blank" rel="noreferrer"><div class="topic-top"><span class="topic-icon">⌘</span><span class="topic-arrow">↗</span></div><h3>Technology</h3><p>The inventions changing what comes next.</p><div class="topic-footer"><span>See what's next</span><span class="line-arrow">⟶</span></div></a>
+        <a class="topic-card arts" href="https://en.wikipedia.org/wiki/Portal:Arts" target="_blank" rel="noreferrer"><div class="topic-top"><span class="topic-icon">◈</span><span class="topic-arrow">↗</span></div><h3>Arts & ideas</h3><p>Creative minds, bold ideas, new worlds.</p><div class="topic-footer"><span>Find inspiration</span><span class="line-arrow">⟶</span></div></a>
+      </div>
+    </section>
+
+    <section class="daily-section" id="daily">
+      <div class="daily-copy"><div class="eyebrow"><span class="daily-dot"></span> THE DAILY DETOUR</div><h2>One unexpected thing.<br><span class="gradient-text">Every single day.</span></h2><p>Give your brain a tiny adventure. Open a random article and see where the rabbit hole leads.</p><a class="primary-btn" id="randomLink" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" rel="noreferrer">Surprise me <span>↗</span></a></div>
+      <div class="daily-visual"><div class="daily-orb orb-one"></div><div class="daily-orb orb-two"></div><div class="daily-orb orb-three"></div><div class="daily-number">?</div><div class="daily-caption">THE NEXT THING YOU LEARN<br>COULD CHANGE YOUR PERSPECTIVE.</div></div>
+    </section>
+
+    <section class="quote-strip"><span class="quote-mark">“</span><p>The important thing is not to stop questioning. Curiosity has its own reason for existing.</p><span class="quote-credit">— ALBERT EINSTEIN</span></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">a</span><span>atlas<span class="brand-dot">.</span></span></a><span>A concept redesign inspired by Wikipedia.</span><div><a href="https://www.wikipedia.org/" target="_blank" rel="noreferrer">Original website ↗</a><a href="https://en.wikipedia.org/wiki/Wikipedia:About" target="_blank" rel="noreferrer">About Wikipedia ↗</a></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
